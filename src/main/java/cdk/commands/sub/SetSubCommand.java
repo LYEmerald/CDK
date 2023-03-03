@@ -75,9 +75,9 @@ public class SetSubCommand extends BaseSubCommand {
                     }
 
                     if (i > 1) {
-                        sender.sendMessage("§c[§7CDK§c] §2 成功生成" + i + "条CDK");
+                        sender.sendMessage("§c[§7CDK§c] §2成功生成" + i + "条CDK");
                     } else {
-                        sender.sendMessage("§c[§7CDK§c] §2 成功生成CDK:" + TextFormat.DARK_BLUE + cdk);
+                        sender.sendMessage("§c[§7CDK§c] §2成功生成CDK:" + TextFormat.DARK_BLUE + cdk);
                     }
 
                 }

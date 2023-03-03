@@ -20,9 +20,9 @@ public class DelSubCommand extends BaseSubCommand {
             if (!DataTools.isEsistsItem(cdkId)) {
                 sender.sendMessage("§c[§7CDK§c] §4正在删除 " + cdkId + "相关CDK信息");
                 DataTools.removeCdk(args[1]);
-                sender.sendMessage("§c[§7CDK§c] §2 奖励" + cdkId + "删除成功");
+                sender.sendMessage("§c[§7CDK§c] §2奖励" + cdkId + "删除成功");
             } else {
-                sender.sendMessage("§c[§7CDK§c] §4 不存在奖励代号 " + cdkId);
+                sender.sendMessage("§c[§7CDK§c] §4不存在奖励代号 " + cdkId);
             }
         } else {
             sender.sendMessage("§c[§7CDK§c] §4 请输入奖励代号");
