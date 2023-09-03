@@ -42,7 +42,7 @@ public class Cdk extends PluginBase {
         }
 
         if (this.cdkEnable == null && this.cdkConfig == null) {
-            this.getLogger().info("数据库启动失败，，启用 Yaml存储");
+            this.getLogger().info("数据库启动失败,启用 Yaml存储");
             this.cdkConfig = new Config(this.getDataFolder() + "/cdk.yml", 2);
         }
 

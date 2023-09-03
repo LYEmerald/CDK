@@ -53,19 +53,19 @@ public class CdkCommand extends BaseCommand {
                                     DataTools.addItems((Player)sender, items);
                                     sender.sendMessage(TextFormat.GREEN + "§c[§7CDK§c] §2成功兑换 CDK: " + TextFormat.GOLD + args[0]);
                                 } else {
-                                    sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c 这条 CDK 并没有奖励哦");
+                                    sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c这条 CDK 并没有奖励哦");
                                 }
                             } else {
-                                sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c 无效 CDK");
+                                sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c无效 CDK");
                             }
                         } else {
                             String item = DataTools.getCdkItemBySql((SqlEnable)object, args[0]);
                             DataTools.removeCdkItemBySql((SqlEnable)object, args[0]);
                             if (item != null) {
                                 DataTools.addItems((Player)sender, item);
-                                sender.sendMessage(TextFormat.GREEN + "§c[§7CDK§c] §2 成功兑换 CDK: " + TextFormat.GOLD + args[0]);
+                                sender.sendMessage(TextFormat.GREEN + "§c[§7CDK§c] §2成功兑换 CDK: " + TextFormat.GOLD + args[0]);
                             } else {
-                                sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c 无效 CDK");
+                                sender.sendMessage(TextFormat.RED + "§c[§7CDK§c] §c无效 CDK");
                             }
                         }
 

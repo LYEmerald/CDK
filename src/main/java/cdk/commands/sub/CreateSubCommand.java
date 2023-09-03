@@ -33,7 +33,7 @@ public class CreateSubCommand extends BaseSubCommand {
                 cn.save();
                 sender.sendMessage("§c[§7CDK§c] §2奖励创建成功");
             } else {
-                sender.sendMessage("§c[§7CDK§c] §4 此奖励代号已存在");
+                sender.sendMessage("§c[§7CDK§c] §4此奖励代号已存在");
             }
         }
 

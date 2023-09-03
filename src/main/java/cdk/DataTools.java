@@ -55,7 +55,7 @@ public class DataTools {
                 cdkEnable.getManager().deleteField("CDK");
                 cdkEnable = new SqlEnable(Cdk.getCdk(), "CDK", Cdk.getCdk().getData(), new TableType[]{new TableType("cdkNumber", Types.VARCHAR), new TableType("item", Types.VARCHAR), new TableType("isSell", Types.CHAR)});
                 Cdk.getCdk().setCdkEnable(cdkEnable);
-                Cdk.getCdk().getLogger().error("数据库异常，,已初始化cdk表");
+                Cdk.getCdk().getLogger().error("数据库异常,已初始化cdk表");
             } catch (Exception var5) {
             }
         }
